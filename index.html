@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brew & Bloom Cafe — coffee, fresh bakes, and cozy moments.">
+  <title>Brew & Bloom Cafe | Coffee & Good Vibes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">Freshly brewed happiness, every single day ☕</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Brew and Bloom home"><span class="brand-icon">✿</span><span>Brew <em>& Bloom</em><small>CAFE & BAKERY</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a><a href="#menu">Our Menu</a><a href="#story">Our Story</a><a href="#gallery">Gallery</a><a href="#contact">Visit Us</a>
+    </nav>
+    <a class="header-cta" href="#menu">Explore Menu <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> YOUR NEIGHBOURHOOD HAPPY PLACE</div>
+        <h1>Good coffee.<br><em>Better</em> days.</h1>
+        <p>Slow mornings, freshly baked treats, and coffee made with a little extra love. Your favourite corner is waiting.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#menu">Explore our menu <span>↗</span></a><a class="text-link" href="#story">Get to know us <span>→</span></a></div>
+        <div class="hero-note"><div class="avatar-stack"><span>☕</span><span>🥐</span><span>♡</span></div><div><strong>A little cup of joy</strong><small>Made fresh, served with love</small></div></div>
+      </div>
+      <div class="hero-art">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=85" alt="Warm and welcoming cafe interior">
+        <div class="image-sticker"><span>✦</span><strong>Made with<br>love & beans</strong></div>
+        <div class="image-caption"><span class="caption-dot"></span> COFFEE • COMMUNITY • COMFORT</div>
+      </div>
+      <div class="hero-scribble" aria-hidden="true">sip, smile, repeat</div>
+    </section>
+
+    <section class="quick-info">
+      <div><span class="info-icon">◷</span><p><strong>Open every day</strong><small>8:00 AM – 10:00 PM <i>(demo hours)</i></small></p></div>
+      <div><span class="info-icon">⌖</span><p><strong>Come say hello</strong><small>Your neighbourhood, Jaipur</small></p></div>
+      <div><span class="info-icon">♡</span><p><strong>Made for your moments</strong><small>Coffee, bakes & good company</small></p></div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-heading"><div><div class="eyebrow"><span></span> A LITTLE SOMETHING FOR EVERYONE</div><h2>Made to be <em>savored.</em></h2></div><p>From your first morning sip to that afternoon sweet treat, find your new favourite.</p></div>
+      <div class="menu-filters" role="group" aria-label="Filter menu">
+        <button class="filter active" data-filter="all">All favourites</button><button class="filter" data-filter="coffee">Coffee & drinks</button><button class="filter" data-filter="bites">Bakes & bites</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-card" data-category="coffee"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80" alt="Iced latte"><span class="menu-tag">BESTSELLER</span></div><div class="menu-details"><div><h3>Vanilla Iced Latte</h3><p>Espresso, milk & vanilla</p></div><strong>₹180</strong></div></article>
+        <article class="menu-card" data-category="coffee"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80" alt="Fresh cup of coffee"></div><div class="menu-details"><div><h3>Classic Cappuccino</h3><p>Rich espresso, silky foam</p></div><strong>₹150</strong></div></article>
+        <article class="menu-card" data-category="bites"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80" alt="Freshly baked bread"><span class="menu-tag">BAKED FRESH</span></div><div class="menu-details"><div><h3>Butter Croissant</h3><p>Flaky, buttery, golden</p></div><strong>₹120</strong></div></article>
+        <article class="menu-card" data-category="bites"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Chocolate cake"></div><div class="menu-details"><div><h3>Chocolate Fudge Cake</h3><p>Decadent and delicious</p></div><strong>₹220</strong></div></article>
+      </div>
+      <p class="demo-note">Demo content: menu items and prices are sample placeholders. Replace them with the cafe's actual menu.</p>
+    </section>
+
+    <section class="story-section section-pad" id="story">
+      <div class="story-photo"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85" alt="Coffee being prepared by a barista"><div class="story-badge">GOOD<br>THINGS<br>BREW HERE</div></div>
+      <div class="story-copy"><div class="eyebrow"><span></span> MORE THAN JUST COFFEE</div><h2>A cosy corner<br>for <em>your kind</em> of day.</h2><p>We believe the best moments are often the simplest: a warm cup, a familiar face, and nowhere else you need to be. Brew & Bloom is a demo cafe concept built around those little joys.</p><a class="text-link" href="#contact">Come find your corner <span>→</span></a></div>
+    </section>
+
+    <section class="quote-band"><span class="quote-mark">“</span><p>Life happens. Coffee helps.</p><span class="quote-sparkle">✳</span></section>
+
+    <section class="gallery-section section-pad" id="gallery">
+      <div class="section-heading"><div><div class="eyebrow"><span></span> LITTLE MOMENTS, BIG FEELINGS</div><h2>A peek inside <em>our world.</em></h2></div><p>Good sips, sweet treats, and spaces made for staying a little longer.</p></div>
+      <div class="gallery-grid"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Cosy cafe seating"><img src="https://images.unsplash.com/photo-1551024506-0bc0a8f2e7c8?auto=format&fit=crop&w=800&q=80" alt="Cafe pastry display" onerror="this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80'"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Barista pouring coffee"></div>
+    </section>
+
+    <section class="visit-section" id="contact">
+      <div class="visit-copy"><div class="eyebrow light"><span></span> YOUR TABLE IS WAITING</div><h2>Let's make<br><em>some memories.</em></h2><p>Drop by for a quick coffee or settle in for a slow afternoon. We'd love to see you.</p><div class="visit-details"><p><span>⌖</span><span><strong>Find us</strong><small>Add cafe address, Jaipur</small></span></p><p><span>◷</span><span><strong>Opening hours</strong><small>Daily, 8 AM – 10 PM (sample)</small></span></p></div><a class="button button-light" id="whatsappLink" href="https://wa.me/910000000000?text=Hello%2C%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener">Chat on WhatsApp <span>↗</span></a></div>
+      <div class="visit-art"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=85" alt="A freshly brewed cup of coffee on a cafe table"><div class="round-stamp">GOOD COFFEE<br>GOOD COMPANY<br>✦ SINCE ALWAYS ✦</div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-icon">✿</span><span>Brew <em>& Bloom</em><small>CAFE & BAKERY</small></span></a><p>Made with a little extra love. <span>♡</span></p><small>© <span id="year"></span> Brew & Bloom Cafe — Demo website concept.</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
